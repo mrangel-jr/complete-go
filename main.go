@@ -18,6 +18,8 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+	defer app.DB.Close()
+
 	app.Logger.Printf("We are running out app on port %d", port)
 
 	r := routes.SetupRoutes(app)
