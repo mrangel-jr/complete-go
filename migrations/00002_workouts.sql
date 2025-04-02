@@ -10,9 +10,9 @@ CREATE TABLE IF NOT EXISTS workouts (
   created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
   updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 )
--- *goose StatementEnd
+-- +goose StatementEnd
 
--- *goose Down
+-- +goose Down
 -- +goose StatementBegin
 DROP TABLE users;
 -- +goose StatementEnd
